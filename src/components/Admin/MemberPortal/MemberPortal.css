@@ -1,0 +1,120 @@
+.aira-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.aira-logo-container {
+    text-align: center;
+    margin: 5px 0 50px;
+}
+
+.aira-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.aira-title {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.aira-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aira-input {
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.aira-password-wrapper {
+    position: relative;
+}
+
+.aira-eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.aira-login-btn {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    height: 42px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.aira-login-btn:hover {
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+}
+
+.aira-forgot-password {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.aira-forgot-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.aira-forgot-link:hover {
+    text-decoration: underline;
+}
+
+.aira-signup-btn, .aira-contact-btn, .aira-booking-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.aira-signup-btn:hover, .aira-contact-btn:hover, .aira-booking-btn:hover {
+    background-color: #286090;
+    border-color: #286090;
+}
+
+.aira-buttons-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.aira-app-stores {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.aira-app-link {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.aira-app-badge {
+    height: 40px;
+}
+
+.aira-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.aira-gymmaster {
+    color: #337ab7;
+    font-weight: bold;
+    text-decoration: none;
+}

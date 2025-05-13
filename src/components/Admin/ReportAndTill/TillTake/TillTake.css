@@ -1,0 +1,77 @@
+.golf-container {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.golf-report-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.golf-filters-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.golf-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.golf-filter-label {
+    width: 120px;
+    font-weight: 500;
+}
+
+.golf-filter-control {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.golf-checkbox-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.golf-table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.golf-transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.golf-transaction-table th {
+    border-bottom: 2px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.golf-transaction-table td {
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.golf-no-transactions {
+    text-align: center;
+    padding: 50px 0;
+    color: #adb5bd;
+    font-size: 18px;
+}
+
+.golf-time-period {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,59 @@
+.door-ctrl-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.door-ctrl-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.door-ctrl-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.door-ctrl-form-group {
+    margin-bottom: 15px;
+}
+
+.door-ctrl-label {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.door-ctrl-select {
+    background-color: white;
+}
+
+.door-ctrl-save-btn {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.door-ctrl-save-btn:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+.door-ctrl-hint {
+    font-size: 12px;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.door-ctrl-divider {
+    border-top: 1px solid #e9ecef;
+    margin: 25px 0 20px;
+}
+
+.door-ctrl-checkbox-container {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,1278 @@
+/* Admin Dashboard Css Start */
+
+.mb-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+}
+
+.mb-card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mb-red-card {
+    background-color: #d6696d;
+    color: black;
+}
+
+.mb-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.mb-footnote {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: center;
+}
+
+.mb-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mb-nav-btn {
+    border: 1px solid #ddd;
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mb-nav-left {
+    border-radius: 4px 0 0 4px;
+}
+
+.mb-nav-right {
+    border-radius: 0 4px 4px 0;
+}
+
+.mb-nav-month {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 15px;
+    font-weight: 500;
+}
+
+.mb-legend {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.mb-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.mb-legend-color {
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+
+.mb-blue-block {
+    background-color: #a8d1f8;
+}
+
+.mb-green-block {
+    background-color: #c8e6c9;
+}
+
+.mb-red-block {
+    background-color: #ffcdd2;
+}
+
+.mb-chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mb-chart-grid {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 10px;
+    bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.mb-grid-line-horizontal {
+    border-bottom: 1px solid #e0e0e0;
+    grid-column: 1 / -1;
+}
+
+.mb-grid-line-vertical {
+    border-right: 1px solid #e0e0e0;
+    grid-row: 1 / -1;
+}
+
+.mb-y-axis {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.mb-y-label {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.mb-x-axis {
+    position: absolute;
+    left: 50px;
+    right: 10px;
+    bottom: 0;
+    height: 50px;
+}
+
+.mb-x-label {
+    position: absolute;
+    font-size: 0.75rem;
+    color: #666;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    white-space: nowrap;
+}
+
+.mb-blue-line {
+    position: absolute;
+    height: 2px;
+    background-color: #a8d1f8;
+    z-index: 1;
+}
+
+.mb-blue-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #64b5f6;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.mb-red-area {
+    position: absolute;
+    background-color: rgba(255, 205, 210, 0.5);
+    z-index: 0;
+}
+
+.mb-red-line {
+    position: absolute;
+    width: 2px;
+    background-color: #ef9a9a;
+    z-index: 1;
+}
+
+.mb-red-dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #ef5350;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.mb-change-indicator {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.mb-down-arrow {
+    color: #f44336;
+}
+
+.mb-visitor-bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Data tooltip styles */
+.mb-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 100;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.mb-tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+.money-chart-container {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.money-chart-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.money-chart-date-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.money-chart-date {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px;
+}
+
+.money-chart-arrow {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.money-chart-visualization {
+    position: relative;
+    height: 300px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.money-chart-gridlines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 45px;
+}
+
+.money-chart-gridline {
+    width: 100%;
+    border-top: 1px solid #e9ecef;
+    position: relative;
+}
+
+.money-chart-gridline-label {
+    position: absolute;
+    left: -45px;
+    top: -10px;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.money-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+    position: relative;
+    padding-left: 45px;
+}
+
+.money-chart-month-labels {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 5px;
+    padding-left: 45px;
+}
+
+.money-chart-month {
+    text-align: center;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.money-chart-bar-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.money-chart-bar {
+    width: 75%;
+    border-radius: 2px 2px 0 0;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.money-chart-bar:hover {
+    opacity: 0.8;
+}
+
+/* Updated bar colors to match the image */
+.money-chart-bar-may {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.money-chart-bar-jun {
+    background-color: rgba(180, 192, 200, 0.6);
+}
+
+.money-chart-bar-jul {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.money-chart-bar-aug {
+    background-color: rgba(152, 251, 152, 0.3);
+}
+
+.money-chart-bar-sep {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.money-chart-bar-oct {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.money-chart-bar-nov {
+    background-color: rgba(180, 192, 200, 0.6);
+}
+
+.money-chart-bar-dec {
+    background-color: rgba(173, 216, 230, 0.6);
+}
+
+.money-chart-bar-jan {
+    background-color: rgba(152, 251, 152, 0.3);
+}
+
+.money-chart-bar-feb {
+    background-color: rgba(173, 216, 230, 0.6);
+}
+
+.money-chart-bar-mar {
+    background-color: rgba(173, 216, 230, 0.6);
+}
+
+.money-chart-bar-apr {
+    background-color: rgba(180, 192, 200, 0.6);
+}
+
+.money-chart-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 100;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    transform: translateX(-50%);
+}
+
+.money-chart-tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+.visit-card-container {
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.visit-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.visit-header-title {
+    color: #4a4a4a;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.visit-nav-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #666;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.visit-nav-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.visit-legend-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.visit-legend-color {
+    width: 50px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: rgba(153, 102, 255, 0.2);
+    border: 1px solid rgba(153, 102, 255, 1);
+}
+
+.visit-chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .visit-inner-card {
+        padding: 15px;
+    }
+}
+
+.golf-schedule-container {
+    height: 700px;
+    overflow-y: scroll;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.golf-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.golf-title-section {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.golf-title-section h2 {
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.golf-title-section p {
+    color: #777;
+    margin: 0;
+}
+
+.golf-nav-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.golf-edit-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.golf-search-section {
+    margin-bottom: 20px;
+}
+
+.golf-day-header {
+    color: #777;
+    padding: 12px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.golf-time-slot {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.golf-time-slot:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.golf-time-col {
+    color: #777;
+    padding-left: 15px;
+    font-size: 0.9rem;
+}
+
+.golf-activity-col {
+    color: #555;
+    font-weight: 500;
+}
+
+.golf-info-col {
+    text-align: center;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.golf-icon-col {
+    text-align: center;
+}
+
+.golf-brand-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    color: #444;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.golf-location-icon {
+    margin-right: 5px;
+    color: #777;
+}
+
+.golf-person-icon {
+    margin-right: 5px;
+    color: #777;
+}
+
+.debtors-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.debtors-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.debtors-chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.debtors-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.debtors-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.debtors-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.debtors-legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.debtors-legend-label {
+    font-size: 14px;
+    color: #555;
+}
+
+.revenue-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.revenue-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.revenue-chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.revenue-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.revenue-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.revenue-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.revenue-legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.revenue-legend-label {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.revenue-tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    display: none;
+}
+
+.member-gender-card {
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.member-gender-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.member-gender-chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.member-gender-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 100;
+    display: none;
+}
+
+.member-gender-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.member-gender-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.member-gender-legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.member-gender-legend-label {
+    font-size: 14px;
+    color: #555;
+}
+
+.membership-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.membership-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.membership-chart-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.membership-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.membership-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.membership-legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.membership-legend-label {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.membership-tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    display: none;
+}
+
+.finance-dashboard-wrapper {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.finance-report-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.finance-navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.finance-current-period {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.finance-nav-button {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.finance-nav-button:hover {
+    background-color: #f8f9fa;
+}
+
+.finance-visualization-area {
+    position: relative;
+    height: 400px;
+}
+
+.sf-container {
+    max-width: 800px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.sf-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.sf-view-toggle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #4d4d4d;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sf-funnel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sf-stage {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    color: #333;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sf-stage:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sf-stage-uncontacted {
+    background-color: #7baf7b;
+    max-width: 100%;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+.sf-stage-contacted {
+    background-color: #8bc08b;
+    max-width: 85%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+
+.sf-stage-followup {
+    background-color: #9cd19c;
+    max-width: 70%;
+}
+
+.sf-stage-booked {
+    background-color: #aedfae;
+    max-width: 60%;
+}
+
+.sf-stage-noshow {
+    background-color: #d0ecd0;
+    max-width: 50%;
+}
+
+.sf-stage-more {
+    background-color: #e7f5e7;
+    max-width: 45%;
+    cursor: pointer;
+}
+
+/* Stacked view styles */
+.sf-stacked .sf-stage {
+    max-width: 100% !important;
+    clip-path: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Progress bar for stacked view */
+.sf-progress {
+    height: 10px;
+    margin-top: -8px;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sf-progress-bar {
+    height: 100%;
+    background-color: #7baf7b;
+    border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sf-stage {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.sf-stage:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.sf-stage:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.sf-stage:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.sf-stage:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.sf-stage:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.sf-stage:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.mb-container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.mb-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.mb-year-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.mb-year-selector .mb-year {
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.mb-year-selector .mb-nav-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mb-year-selector .mb-nav-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.mb-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+}
+
+.mb-legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 0.85rem;
+}
+
+.mb-legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.mb-chart-container {
+    position: relative;
+    height: 350px;
+}
+
+/* Legend colors */
+.mb-color-noshows {
+    background-color: rgba(255, 182, 193, 0.7);
+}
+
+.mb-color-cancellations {
+    background-color: rgba(233, 116, 116, 0.7);
+}
+
+.mb-color-westvalley {
+    background-color: rgba(92, 123, 164, 0.7);
+}
+
+.mb-color-conway {
+    background-color: rgba(86, 115, 152, 0.7);
+}
+
+.mb-color-wellington {
+    background-color: rgba(125, 156, 193, 0.7);
+}
+
+.mb-color-golfsim {
+    background-color: rgba(197, 210, 230, 0.7);
+}
+
+.mb-color-prospect {
+    background-color: rgba(224, 232, 243, 0.7);
+}
+
+/* Foter Css Start */
+
+.gm-support-container {
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.gm-feedback-section {
+    max-width: 270px;
+}
+
+.gm-feedback-textarea {
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 100px;
+    width: 100%;
+    border: none;
+    resize: none;
+    color: #999;
+    font-size: 14px;
+}
+
+.gm-feedback-btn {
+    background-color: #4C9148;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.gm-feedback-btn:hover {
+    background-color: #3d7539;
+    color: white;
+}
+
+.gm-feedback-icon {
+    margin-right: 8px;
+}
+
+.gm-support-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.gm-support-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.gm-support-btn {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.gm-support-btn:hover {
+    background-color: #444;
+    color: white;
+}
+
+.gm-support-icon {
+    margin-right: 8px;
+}
+
+.gm-support-hours-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.gm-support-hours-text {
+    font-size: 16px;
+}
+
+.gm-language-btn {
+    background-color: rgba(80, 80, 80, 0.3);
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.gm-language-btn:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+}
+
+.gm-ticket-number {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.gm-footer-bar {
+    background-color: #1a1a1a;
+    color: #ccc;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.gm-footer-logo {
+    height: 24px;
+    margin-left: 5px;
+}
+
+/* Foter Css End */
+
+/* Admin Dashboard Css End */

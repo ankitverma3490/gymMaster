@@ -1,0 +1,186 @@
+.pos-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.pos-main-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.pos-left-panel {
+    flex: 1;
+}
+
+.pos-right-panel {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pos-search-container {
+    margin-bottom: 20px;
+}
+
+.pos-search-input {
+    border-radius: 4px 0 0 4px;
+}
+
+.pos-search-button {
+    border-radius: 0 4px 4px 0;
+}
+
+.pos-settings-btn {
+    background-color: white;
+    border: 1px solid #dee2e6;
+}
+
+.pos-card {
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+}
+
+.pos-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pos-card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pos-card-text {
+    font-weight: 500;
+}
+
+.pos-cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pos-cart-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.pos-cart-icon {
+    font-size: 1.5rem;
+}
+
+.pos-action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.pos-btn {
+    border: 1px solid #dee2e6;
+    background-color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.pos-cart-table {
+    margin-bottom: 15px;
+}
+
+.pos-cart-table th {
+    font-weight: 500;
+}
+
+.pos-cart-content {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.pos-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.pos-total-due {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.pos-payment-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pos-charge-btn {
+    background-color: #7cb342;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pos-cancel-btn {
+    background-color: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pos-complete-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pos-select-container {
+    margin-bottom: 15px;
+}
+
+.pos-select-label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pos-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+
+.pos-assign-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}

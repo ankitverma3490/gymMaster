@@ -1,0 +1,112 @@
+.golf-container {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #f7f8fc;
+}
+
+.golf-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.golf-filters-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+}
+
+.golf-filters-section {
+    background-color: #f1f2f6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.golf-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+.golf-filter-control {
+    flex: 1;
+    min-width: 200px;
+}
+
+.golf-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.golf-table-container {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.golf-billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: smaller;
+    white-space: nowrap;
+}
+
+.golf-billing-table th {
+    border-bottom: 2px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+    position: relative;
+}
+
+.golf-billing-table td {
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+
+
+.golf-amount {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.golf-status-badge {
+    color: #3498db;
+}
+
+.golf-filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.golf-time-period {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.golf-to-label {
+    padding: 0 5px;
+}
+
+.golf-search-group {
+    display: flex;
+}
+
+.golf-search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.golf-search-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

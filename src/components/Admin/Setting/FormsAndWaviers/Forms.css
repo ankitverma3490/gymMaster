@@ -1,0 +1,58 @@
+.mm-container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.mm-table {
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-size: 13px;
+}
+.mm-table thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 13px;
+}
+.mm-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mm-btn-primary {
+    background-color: #2d7cc1;
+    border-color: #2d7cc1;
+    font-size: 13px;
+    color: white;
+}
+.mm-btn-danger {
+    background-color: #e63757;
+    border-color: #e63757;
+    color: white;
+}
+.mm-btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+.mm-action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.mm-sortable::after {
+    content: "↕";
+    margin-left: 5px;
+    color: #6c757d;
+}
+.mm-header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.mm-table-layout-fixed {
+    table-layout: fixed;
+}
+.mm-text-nowrap {
+    white-space: nowrap;
+}

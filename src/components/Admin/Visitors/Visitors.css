@@ -1,0 +1,518 @@
+.dal-container {
+    padding: 20px;
+}
+
+.dal-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dal-card-body {
+    padding: 15px;
+}
+
+.dal-filter-row {
+    margin-bottom: 15px;
+}
+
+.dal-dropdown {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.dal-date-input {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.dal-date-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.dal-btn-print {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.dal-btn-fire {
+    background-color: #2678b9;
+    border: 1px solid #2678b9;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #fff;
+}
+
+.dal-access-table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.dal-access-row {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dal-access-row-recent {
+    background-color: #e9f5e9;
+}
+
+.dal-time-cell {
+    width: 180px;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.dal-details-cell {
+    padding: 15px;
+    vertical-align: top;
+}
+
+.dal-user-cell {
+    width: 300px;
+    padding: 15px;
+    vertical-align: top;
+    border-left: 1px solid #dee2e6;
+}
+
+.dal-time-ago {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.dal-timestamp {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.dal-access-type {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dal-door-info {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.dal-location {
+    color: #666;
+}
+
+.dal-user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    background-color: #f0f0f0;
+}
+
+.dal-user-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.dal-user-info {
+    overflow: hidden;
+}
+
+.dal-user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dal-user-role {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.dal-visit-tag {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Right sidebar */
+.dal-sidebar-card {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.dal-sidebar-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dal-sidebar-title {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.dal-dropdown-icon {
+    color: #2678b9;
+}
+
+.dal-sidebar-body {
+    padding: 15px;
+}
+
+.dal-door-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dal-door-name {
+    color: #2678b9;
+    font-weight: 500;
+}
+
+.dal-door-status {
+    color: #666;
+}
+
+.dal-btn-edit {
+    color: #333;
+    background: none;
+    border: none;
+    padding: 4px 8px;
+}
+
+.dal-btn-open {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-size: 0.9rem;
+}
+
+.dal-visits-card {
+    text-align: center;
+}
+
+.dal-visits-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dal-visits-count {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dal-visits-note {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+.door-card {
+    width: 100%;
+}
+
+.door-header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.door-title {
+    color: #4a86e8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.door-body {
+    padding: 20px;
+}
+
+.door-status {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.status-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.status-select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.door-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #555;
+}
+
+.close-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.open-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.edit-form {
+    display: none;
+}
+
+/* Modal CSS */
+.dal-print-modal .modal-dialog {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.dal-print-modal .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.dal-print-modal .modal-header,
+.dal-print-modal .modal-footer {
+    display: none;
+}
+
+.dal-print-modal .modal-body {
+    padding: 0;
+}
+
+.gym-report-wrapper {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gym-report-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.gym-report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.gym-report-timestamp {
+    font-size: 14px;
+    color: #333;
+}
+
+.gym-report-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+.gym-report-logo {
+    text-align: right;
+    width: 120px;
+}
+
+.gym-report-logo img {
+    max-width: 100%;
+}
+
+.gym-report-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.gym-report-detail-row {
+    display: flex;
+}
+
+.gym-report-detail-label {
+    width: 150px;
+    color: #555;
+}
+
+.gym-report-detail-colon {
+    width: 10px;
+    color: #555;
+}
+
+.gym-report-detail-value {
+    flex-grow: 1;
+    font-weight: normal;
+}
+
+.gym-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.gym-report-table th {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.gym-report-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.gym-report-footer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.gym-report-pagination {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
+.gym-print-panel {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.gym-print-form-group {
+    margin-bottom: 30px;
+}
+
+.gym-print-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gym-print-dropdown {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.gym-print-buttons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.gym-print-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.gym-print-btn-primary {
+    background-color: #a2c7f0;
+    color: #000;
+    border: none;
+}
+
+.gym-print-btn-secondary {
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+}

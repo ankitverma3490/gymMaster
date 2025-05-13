@@ -1,0 +1,148 @@
+.gm-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.gm-main-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.gm-left-panel {
+    flex: 1;
+}
+
+.gm-right-panel {
+    flex: 2;
+}
+
+.gm-section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gm-progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.gm-progress-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.gm-progress-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(226, 255, 226, 0.5);
+    border: 20px solid rgba(226, 255, 226, 0.8);
+}
+
+.gm-progress-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gm-progress-value {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.gm-doors-section {
+    margin-top: 30px;
+}
+
+.gm-doors-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.gm-door-table {
+    border: 1px solid #dee2e6;
+    width: 100%;
+}
+
+.gm-door-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.gm-door-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.gm-status-unlocked {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.gm-status-connected {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.gm-tutorial-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gm-tutorial-desc {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.gm-accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gm-accordion-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gm-accordion-body {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+}
+
+.gm-onboarding-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

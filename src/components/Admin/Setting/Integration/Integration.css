@@ -1,0 +1,139 @@
+:root {
+    --api-dash-text-color: #333;
+    --api-dash-text-muted: #6c757d;
+    --api-dash-border-color: #e5e7eb;
+    --api-dash-primary-color: #3b82f6;
+    --api-dash-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --api-dash-transition-speed: 0.2s;
+}
+
+.api-dash-container {
+    max-width: 1200px;
+}
+
+.api-dash-card {
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: var(--api-dash-card-shadow);
+    border: none;
+    transition: box-shadow var(--api-dash-transition-speed) ease;
+}
+
+.api-dash-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.api-dash-card-header {
+    background-color: #fff;
+    border-bottom: 1px solid var(--api-dash-border-color);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.api-dash-card-title {
+    font-weight: 600;
+    color: var(--api-dash-text-color);
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.api-dash-card-body {
+    padding: 1.75rem;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.api-dash-form-label {
+    font-weight: 500;
+    color: var(--api-dash-text-color);
+}
+
+.api-dash-form-description {
+    font-style: italic;
+    color: var(--api-dash-text-muted);
+    margin-bottom: 1.75rem;
+    line-height: 1.5;
+}
+
+.api-dash-btn {
+    border-color: #d1d5db;
+    color: #4b5563;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: all var(--api-dash-transition-speed) ease;
+}
+
+.api-dash-btn:hover {
+    background-color: #f3f4f6;
+    border-color: #9ca3af;
+    color: #374151;
+}
+
+.api-dash-input-group-text {
+    background-color: #fff;
+    border-color: #d1d5db;
+}
+
+.api-dash-header-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.api-dash-form-control, .api-dash-form-select {
+    border-color: #d1d5db;
+    border-radius: 6px;
+    padding: 0.625rem 0.75rem;
+    transition: border-color var(--api-dash-transition-speed) ease, box-shadow var(--api-dash-transition-speed) ease;
+}
+
+.api-dash-form-control:focus, .api-dash-form-select:focus {
+    border-color: var(--api-dash-primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.api-dash-form-control-plaintext {
+    color: var(--api-dash-text-muted);
+    font-weight: 500;
+    padding: 0.625rem 0;
+}
+
+.api-dash-form-control.api-dash-bg-light {
+    background-color: #f9fafb !important;
+}
+
+.api-dash-input-group .api-dash-btn {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.api-dash-row {
+    align-items: center;
+}
+
+.api-dash-col-form-label {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .api-dash-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .api-dash-header-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .api-dash-header-buttons .api-dash-btn {
+        flex: 1;
+        text-align: center;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+    }
+}

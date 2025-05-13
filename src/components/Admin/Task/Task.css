@@ -1,0 +1,89 @@
+.task-mgmt-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.task-mgmt-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.task-mgmt-filters {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.task-mgmt-search-row {
+    margin-bottom: 15px;
+}
+
+.task-mgmt-date-range {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.task-mgmt-date-range-text {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.task-mgmt-tabs {
+    margin-bottom: 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.task-mgmt-tab {
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.task-mgmt-tab.active {
+    border-bottom: 2px solid #0d6efd;
+    color: #0d6efd;
+    background-color: transparent;
+}
+
+.task-mgmt-table {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.task-mgmt-table-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.task-mgmt-table-header th {
+    padding: 12px 15px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.task-mgmt-sort-icon {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.task-mgmt-no-results {
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.task-mgmt-tab-content {
+    display: none;
+}
+
+.task-mgmt-tab-content.active {
+    display: block;
+}
