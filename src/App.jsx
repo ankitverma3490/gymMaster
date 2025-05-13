@@ -67,7 +67,8 @@ import AddDoorsFrom from "./components/Admin/Setting/Doores&Readers/AddDoorsFrom
 import NewAddMember from "./components/Admin/AddMember/NewAddMembar";
 import MemberQuestionnaires from "./components/Admin/AddMember/MemberQuestionnaires";
 import Resource from "./components/Admin/Resource/Resource";
-
+import { Provider } from "react-redux";
+import store from "./Redux/store"
 
 const App = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -220,9 +221,11 @@ const App = () => {
 };
 function AppWrapper() {
   return (
+    <Provider store={store}>
     <Router>
       <App />
     </Router>
+    </Provider>
   );
 }
 
